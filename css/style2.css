@@ -1,0 +1,272 @@
+/* General */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3e2ce;
+  justify-content: center;
+}
+
+/* Logo principal */
+.logo {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+/* Barra de navegacion */
+header {
+  background-color: #a62c21cc;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* contenido de la barra */
+
+nav ul {
+  text-align: center;
+  list-style-type: armenian;
+  padding: 0px;
+}
+
+
+nav ul li {
+  display: inline-block;
+  margin: 0 25px;
+  margin-right: 70px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Estilo secciones */
+
+section {
+  padding: 10px;
+}
+
+section h1, section h2 {
+  font-variant: small-caps;
+  font-size: 30px;
+  text-align: center;
+}
+
+section h1 {
+  font-stretch: wider;
+}
+
+section p {
+  font-size: 20px;
+  text-align: center;
+  font-stretch: condensed;
+}
+
+/* contenido general */
+
+.projectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+/* Propiedades de las imagenes */
+
+.projecto {
+  position: relative; 
+  width: 18%; 
+  height: auto;
+  overflow: hidden;
+  margin: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.projecto img {
+  border-radius: 2px;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+
+.projecto:hover img {
+  transform: scale(1.1);
+}
+
+.projectol {
+  position: relative;
+  width: 18%; 
+  overflow: hidden;
+  margin: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.projectol img {
+  border-radius: 2px;
+  width:100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+
+.projectol:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+
+.contenido {
+  position: absolute;  
+  top: 0;
+  right: 0; 
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(7px);
+  pointer-events: none;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  z-index: 1;
+  padding:20px;
+}
+
+.projecto:hover .contenido {
+  opacity: 1;
+}
+.projectol:hover .contenido {
+  opacity: 1;
+}
+
+/* Expandir imagen */
+
+.expansion {
+  display:none;
+  position:fixed;
+  z-index:9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.expandirimg {
+  max-width: 35%;
+  display:block;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.cerrar {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Contacto */
+
+.contenido h3 {
+  font-size: 20px;
+  font-size-adjust: none;
+  font-stretch: condensed;
+
+}
+
+.ABOUT{
+  background-color: #a62c21cc;
+  padding: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.ABOUT img{
+  border-radius: 2px;
+  width: 30%;   
+  margin: 10px;
+  align-self: flex-start;
+  margin-top: 50px;
+}
+
+.ABOUT h3{
+  font-size: 40px;
+  font-stretch: condensed;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;  
+}
+.about-contenido{
+  flex: 1;
+  padding-right: 50px;
+}
+
+.ABOUT p{
+  display: block;
+  color:#ffffff;
+  font-size: 20px;
+  text-align:left;
+  font-stretch: condensed;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.CONTACT h3{
+  font-variant: small-caps;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Pie de página */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+#botonbck {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #a62c21;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#botonbck:hover {
+  background-color: #a62c21;
+}
